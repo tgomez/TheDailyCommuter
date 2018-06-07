@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Daily Commuter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row head">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1>The Daily Commuter</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 section1">
+				<div class="iframeContainer">
+					<h2>Scatter Analysis</h2>
+					<iframe class="chart" src="d3.html" style="height:600px;width:1140px;"></iframe>
+					<p>Select X-axis to swich to different analysis</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="article">
+					<ul>
+						
+						<h3>Abstract</h3>
+						<li>
+							I studied the relationships of several factors related to commuting to work such as average commute time in minutes, use of public transportation and use of private vehicles for transportation in different states and compared them to other factors such as the sex percentage, percent homeownership and maritial status may have.
+                        </li><br/>
+
+                        <h3>Analysis:</h3>
+						<h4>Commuting Via Car and Trucks</h4>
+						<li>
+                            <li>• There is a weak correlation (0.1865) between the use of a personal vehicle to commute and the percentage of males in a state.</li>
+                            <li>• There is a strong positive correlation (0.7699) between the use of a personal vehicle to commute and the percentage of homeownership in a state.</li>
+                            <li>• There is a moderately positive correlation (0.5927) between the use of a personal vehicle to commute and the number of married couples in a state.</li>
+                           <p2>• This graph shows us that the use of a personal vehicle to commute increases as the rates of homeownership and marriage increase.</p2>
+                        </li><br/>
+                        
+						<h4>Commuting Via Public Transportation</h4>
+						<li>
+                            <li>• There is a weak negative correlation (-0.3600) between the use of public transportation and the percentage of males in a state.</li>
+                            <li>• There is a strong negative correlation (-0.7557) between the use of public transportation and the percentage of homeownership in a state.</li>
+                            <li>• There is a strong negative correlation (-0.6414) between the use of public transportation and the percentage of married couples in a state.</li>
+                            <p2>• This graph shows us that the use of public transportation to commute decreases as the rates of males, homeownership, and marriage increase.</p2>
+                        </li><br/>
+
+                        <h4>Average Commute Time (Minutes)</h4>
+						<li>
+                            <li>• There is a strong negative correlation (-0.6176) between the average commute time and the percentage of males in a state.</li>
+                            <li>• There is a weak negative correlation (-0.3691) between the average commute time and the percentage of homeownership in a state.</li>
+                            <li>• There is a moderate negative correlation (-0.5414) between the average commute time and the percentage of married couples in a state.</li>
+                            <p2>• This graph shows us that the commute time decreases as the rates of males, homeownership, and marriage increase.</p2>
+						</li><br/>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
