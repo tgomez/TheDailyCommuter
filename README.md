@@ -1,2 +1,3 @@
 # TheDailyCommuter
-Utilized D3 and tooltip to create an interactive graph
+
+Compiled data from the United States Census Bureau and the CDC into a CSV and utilized D3 and tooltips to create an interactive graph.
