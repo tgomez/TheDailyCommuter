@@ -67,21 +67,13 @@ function makeResponsive() {
     // This function identifies the minimum and maximum values in a column in data.csv
     // and assign them to xMin, xMax, yMin, yMax variables, which will define the axis domain
     function findMinAndMax(dataColumnX, dataColumnY) {
-        xMin = d3.min(six_five_data, function(data) {
-        return +data[dataColumnX] * 0.8;
-        });
+        xMin = 0
 
-        xMax = d3.max(six_five_data, function(data) {
-        return +data[dataColumnX] * 1.1;
-        });
+        xMax = 100
 
-        yMin = d3.min(six_five_data, function(data) {
-        return +data[dataColumnY] * 0.8;
-        });
+        yMin = 0
 
-        yMax = d3.max(six_five_data, function(data) {
-        return +data[dataColumnY] * 1.1;
-        });
+        yMax = 100
     }
 
     // The default x-axis is 'MalePercent'
@@ -200,7 +192,7 @@ function makeResponsive() {
         .attr("class", "axis-text change")
         .attr("data-axis-name", "PublicTransportPercent")
         .attr("id", "PublicTransportPercent")
-        .text("% Commute Via Public Transit");
+        .text("% State Population Commute Via Public Transit");
 
     chart
         .append("text")
@@ -211,7 +203,7 @@ function makeResponsive() {
         .attr("class", "axis-text unchange")
         .attr("data-axis-name", "PersonalVehiclePercent")
         .attr("id", "PersonalVehiclePercent")
-        .text("% Commute Via Personal Vehicle");
+        .text("% State Population Commute Via Personal Vehicle");
 
     chart
         .append("text")
@@ -293,7 +285,7 @@ function makeResponsive() {
         var corrAxis;
 
         if (clickedAxis === "MalePercent") {
-            // x = corrAxis.attr(((d,i) => d.attr("id") === "allTeethRemoved"));
+            
             corrAxis = d3.select("#PersonalVehiclePercent");
         }
         else if (clickedAxis === "white") {
